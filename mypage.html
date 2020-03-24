@@ -49,7 +49,35 @@
 	</header>
 
 <hr>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
 <a name="films"></a>
+<div id="toTop">Up</div>
+<script type="text/javascript">
+	$(function() {
+ 
+$(window).scroll(function() {
+ 
+if($(this).scrollTop() != 0) {
+ 
+$('#toTop').fadeIn();
+ 
+} else {
+ 
+$('#toTop').fadeOut();
+ 
+}
+ 
+});
+ 
+$('#toTop').click(function() {
+ 
+$('body,html').animate({scrollTop:0},800);
+ 
+});
+ 
+});
+</script>
 
 	<div class="film">
 		<h2>Мои любимые фильмы</h2>
@@ -219,6 +247,11 @@
 </div>
 
   <script>
+
+
+	
+
+
     thumbs.onclick = function(event) {
       let thumbnail = event.target.closest('a');
 
@@ -232,22 +265,9 @@
       largeImg.alt = title;
     }
 
-    class App extends Component {  
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit {gfm-js-extract-pre-1} and save to reload.
-        </p>
-        <ThemeSwitch></ThemeSwitch>
-      </div>
-    );
-  }}
 
+
+    
   </script>
 	</div>
 	<hr>
