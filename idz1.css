@@ -4,9 +4,10 @@ html {
 body{
 	font-family: Pumbudar, sans-serif;
 
-	padding: 0 auto;
+	
 	margin: 0 auto;
 	background-color: #696969;
+	min-width: 1300px;
 }
 
 @font-face {
@@ -15,8 +16,8 @@ body{
    }
 header{
 	 padding: 0 auto;
-	 margin: 0 auto;
-	 height: 100vh;
+	 margin: 0 ;
+	 height: 800px;
 	 background-image: url('background1.jpg');
 }
 .container1{
@@ -46,18 +47,22 @@ header{
 	
 }
 #toTop{
-	width:100px;
-border:1px solid #ccc;
-background:#f7f7f7;
+	margin-bottom: 20px;
+	width:60px;
+	height: 45px;
+	border-radius: 50% 50% 50% 50%;
+/*border:1px solid #ccc;
+background:#f7f7f7;*/
+background: black;
 text-align:center;
-padding:5px;
+padding-top: 10px;
 position:fixed;
 bottom:10px; /* отступ кнопки от нижнего края страницы*/
 right:10px;
 cursor:pointer;
 display:none;
-color:#333;
-font-size:11px;
+color:white;
+font-size:30px;
 }
 header a:hover{
 	color: #696969;
@@ -84,6 +89,7 @@ nav{
 	text-decoration: none;
 }
 
+
 .menu li{
 	display: block;
 	float: right;
@@ -95,9 +101,8 @@ nav{
 	margin-right: 10%;
 	margin-top: 11%;
 	float: right;
-
 	width: 40%;
-	margin-bottom: 100px;
+	
 
 }
 .information h1{
@@ -111,7 +116,7 @@ nav{
 	font-size: 25px;
 }
 .foto img:hover{
-			transform: scale(1.5);
+			transform: scale(1.2);
 			-webkit-transform:scale(2);
 			/*margin-left: 100px;
 			margin-top: -60px;*/
@@ -119,12 +124,13 @@ nav{
 			/*z-index: 50;*/
 		}
 .foto{
-	
+	border: solid 1px red;
 	margin-top: 5%;
-	display: table-cell;
-	height: 60%;
+	/*display: table-cell;*/
+	
 	float: right;
 	width: 40%;
+	height: 60%;
 	/*margin-top: 5%;
 
 	margin-top: 50px;
@@ -163,17 +169,22 @@ h2{
 }
 
 .film{
+	padding: 0px 15px;
+	border: solid 1px black;
+	margin-bottom: 5%;
+	float: left;
 
-	margin-bottom: 50%;
 }
+
 .film1{
 	margin-left: 10%;
 	
-	height: 300px;
+	height: 20%;
 	float: left;
 	width: 20%;
 
 }
+
 .film1 img{
 	border: solid 4px black;
 	margin:3.5%; 
@@ -198,7 +209,11 @@ h2{
 	margin-left: 10%;
 }
 .predmet{
-	margin-bottom: 25%;
+	
+	border: solid 1px orange;
+	float: left;
+	width: 100%;
+	margin-bottom: 5%;
 }
 hr{
 	margin: 0;
@@ -232,12 +247,16 @@ table{
 	
 }
 .hpi img{
-	height: 262px;
+	max-height: 262px;
 }
 .nastroy{
-	margin-bottom: 25%; 
+	border: solid 1px white;
+	margin-bottom: 5%; 
+	float: left;
+	width: 100%;
 }
 .nastroy2{
+	border: solid 1px orange;
 	float: left;
 	margin-left: 10%;
 	height: 300px;
