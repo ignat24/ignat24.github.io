@@ -81,13 +81,18 @@ header{
 
 
 
-@media(max-width: 1700px){
+@media(max-width: 4000px){
+	
 	.conteiner{
-		max-width: 1500px;
+		max-width: 1200px;
 		margin-bottom: 5%;
 		float: left;
 		width: 100%;
 	}
+	.p1{
+	
+	float: left;
+}
 	.tabl{
 	width: 35%;
 	margin-left: 15%;
@@ -97,6 +102,24 @@ header{
 	width: 30%;
 	float: right;
 	margin-right: 20%;
+	
+}
+#thumbs a {
+  border: solid 1px #ccc;
+  width: 100px;
+  height: 100px;
+  padding: 3px;
+  /*margin: 2px;*/
+  float: left;
+}
+#thumbs img{
+	width: 100px;
+	height: 100px;
+}
+.left1{
+	float: left;
+	width: 90%;
+
 	
 }
 table{
@@ -147,6 +170,59 @@ table{
 .podfilm .film1{
 	margin-left: 19.7%;
 }
+.nastroy2{
+	
+	float: left;
+	margin-left: 10%;
+	height: 300px;
+	width: 20%;
+}
+.nastroy2 img{
+	border: solid 2px black;
+	margin-left: 4%; 
+	width: 90%;
+	height: 80%;
+}
+.nastroy2 p{
+	margin: 0;
+	font-family: Pompudar;
+	color: #E6E6FA;
+	margin-bottom: 5%;
+	text-align: center;
+	font-size: 20px;
+
+}
+.info{
+	margin-left: 5%;
+	
+	float: left;
+	width: 40%;
+	
+}
+.fotoo{
+	width: 50%;
+	float: left;
+}
+
+.container h3{
+	text-align: center;
+	color: white;
+	font-size: 25px;
+
+}
+.container li{
+	font-size: 19px;
+	color: #D3D3D3;
+	font-family: Pompudar;
+}
+#largeImg {
+  border: solid 2px #ccc;
+  width: 600px;
+  height: 424px;
+  padding: 3px;
+  float: left;
+}
+
 
 
 }
@@ -198,17 +274,59 @@ table{
 .podfilm .film1{
 	margin-left: 15%;
 }
+.nastroy2{
 	
+	float: left;
+	margin-left: 20%;
+	height: 400px;
+	width: 30%;
+}
+.nastroy2 img{
+	border: solid 2px black;
+	margin-left: 4%; 
+	width: 90%;
+	height: 80%;
+}
+.nastroy2 p{
+	margin: 0;
+	font-family: Pompudar;
+	color: #E6E6FA;
+	margin-bottom: 5%;
+	text-align: center;
+	font-size: 25px;
 
 }
-@media(max-width: 992px){
-	.conteiner{
-		max-width: 750px;
-		margin-bottom: 3%;
-
+.info{
+	margin-left: 5%;
+	
 	float: left;
-	width: 100%;
-	}
+	width: 40%;
+	
+}
+.fotoo{
+	width: 50%;
+	float: left;
+}
+
+.container h3{
+	text-align: center;
+	color: white;
+	font-size: 35px;
+
+}
+.container li{
+	font-size: 22px;
+	color: #D3D3D3;
+	font-family: Pompudar;
+}
+#largeImg {
+  border: solid 2px #ccc;
+  width: 600px;
+  height: 424px;
+  padding: 3px;
+  float: left;
+}
+/*}
 	.tabl{
 	margin-left: 16.5%;
 	width: 100%;
@@ -230,7 +348,123 @@ table{
 	border: solid 2px;
 	border-color: #BF3030;
 	color: #D3D3D3;
+	font-size: 30px;
+	font-family: Roboto;
+}*/
+	
+
+}
+@media(max-width: 992px){
+	
+	.conteiner{
+		margin-left: 100px;
+		max-width: 750px;
+		margin-bottom: 3%;
+
+	float: left;
+	width: 100%;
+	}
+	.tabl{
+	margin-left: 16.5%;
+	width: 100%;
+	float: left;
+	
+
+
+	
+	}
+	.left1{
+	
+	float: left;
+	margin-left: 20%;
+}
+	#thumbs a {
+  border: solid 1px #ccc;
+  width: 150px;
+  height: 150px;
+  padding: 3px;
+  /*margin: 2px;*/
+  float: left;
+  
+}
+#thumbs img{
+	width: 150px;
+	height: 150px;
+}
+.left1{
+	float: left;
+	width: 90%;
+
+	
+}
+	.container li{
 	font-size: 35px;
+	color: #D3D3D3;
+	font-family: Pompudar;
+}
+#largeImg {
+  border: solid 2px #ccc;
+  width: 800px;
+  height: 624px;
+  padding: 3px;
+  float: left;
+  margin-left: 15%;
+}
+	.info{
+	margin-left: 20%;
+	
+	float: left;
+	width: 60%;
+	
+}
+.fotoo{
+	width: 70%;
+	float: left;
+	margin-left: 15%;
+}
+
+.container h3{
+	text-align: center;
+	color: white;
+	font-size: 45px;
+
+}
+	.nastroy2{
+	
+	float: left;
+	margin-left: 30%;
+	height: 500px;
+	width: 40%;
+}
+.nastroy2 img{
+	border: solid 2px black;
+	margin-left: 4%; 
+	width: 90%;
+	height: 80%;
+}
+.nastroy2 p{
+	margin: 0;
+	font-family: Pompudar;
+	color: #E6E6FA;
+	margin-bottom: 5%;
+	text-align: center;
+	font-size: 50px;
+
+}
+
+.hpi{
+	width: 70%;
+	float: right;
+	margin-right: 15%;
+	
+}
+table{
+
+	padding: 5%;
+	border: solid 2px;
+	border-color: #BF3030;
+	color: #D3D3D3;
+	font-size: 40px;
 	font-family: Roboto;
 }
 h2{
@@ -280,6 +514,7 @@ h2{
 
 
 @media(max-width: 767px){
+
 	.conteiner{
 		max-width: none;
 		margin-bottom: 3%;
@@ -481,7 +716,7 @@ hr{
 	width: 100%;
 }
 
-.nastroy2{
+/*.nastroy2{
 	
 	float: left;
 	margin-left: 10%;
@@ -502,66 +737,18 @@ hr{
 	text-align: center;
 	font-size: 20px;
 
-}
+}*/
 
 
-.info{
-	margin-left: 5%;
-	
-	float: left;
-	width: 40%;
-	
-}
-.fotoo{
-	width: 50%;
-	float: left;
-}
 
-.container h3{
-	text-align: center;
-	color: white;
-	font-size: 25px;
 
-}
-.container li{
-	font-size: 19px;
-	color: #D3D3D3;
-	font-family: Pompudar;
-}
-#largeImg {
-  border: solid 2px #ccc;
-  width: 600px;
-  height: 424px;
-  padding: 3px;
-  float: left;
-}
 .galery{
 	float: left;
 	padding: 0;
 }
 
-#thumbs a {
-  border: solid 1px #ccc;
-  width: 100px;
-  height: 100px;
-  padding: 3px;
-  /*margin: 2px;*/
-  float: left;
-}
-#thumbs img{
-	width: 100px;
-	height: 100px;
-}
-.left1{
-	float: left;
-	width: 90%;
 
-	
-}
-.p1{
-	
-	float: left;
-}
+
 
 #thumbs a:hover {
   border-color: #FF9900;
