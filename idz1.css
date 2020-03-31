@@ -17,13 +17,7 @@ body{
 }
 
 
-header{
-	width: 100%;
-	 height: 100vh;
-	 padding: 0;
-	 margin: 0 ;
-	 background-image: url('background1.jpg');
-}
+
 /*@media(max-width: 1200px){
 	header{
 		max-width: 970px;
@@ -51,7 +45,12 @@ header{
 		max-width: none;
 	}
 }*/
-.container1{
+
+
+
+
+@media(max-width: 4000px){
+	.container1{
 
 	background-color: black;
 	height: 10%;
@@ -60,6 +59,35 @@ header{
 	
 	width: 100%;
 	
+}
+header{
+	width: 100%;
+	 height: 100vh;
+	 padding: 0;
+	 margin: 0 ;
+	 background-image: url('background1.jpg');
+}
+#toTop{
+	margin-bottom: 20px;
+	width:60px;
+	height: 40px;
+	border-radius: 50% 50% 50% 50%;
+/*border:1px solid #ccc;
+background:#f7f7f7;*/
+background: grey;
+text-align:center;
+padding-top: 5px;
+position:fixed;
+bottom:10px; /* отступ кнопки от нижнего края страницы*/
+right:10px;
+cursor:pointer;
+display:none;
+color:white;
+font-size:30px;
+}
+.left1{
+	float: left;
+	margin-left: 13%;
 }
 .logo{
 	font-family: Pompudar;
@@ -78,11 +106,6 @@ header{
 	color:white;
 	
 }
-
-
-
-@media(max-width: 4000px){
-	
 	.conteiner{
 		max-width: 1200px;
 		margin-bottom: 5%;
@@ -104,6 +127,59 @@ header{
 	margin-right: 20%;
 	
 }
+.information{
+	border-radius: 3%;
+	background: #000000;
+	margin-right: 10%;
+	margin-top: 11%;
+	float: right;
+	width: 40%;
+	
+
+}
+.information h1{
+	margin-left: 5%;
+	color: white;
+	margin-bottom: 0;
+}
+.information li{
+	font-family: Roboto;
+	color: #009D91;
+	font-size: 25px;
+}
+.foto{
+	
+	margin-top: 5%;
+	/*display: table-cell;*/
+	
+	float: right;
+	width: 40%;
+	height: 60%;
+	/*margin-top: 5%;
+
+	margin-top: 50px;
+	margin-right: 50px;
+	width: 40%;
+	height: 70%;
+	float: right;*/
+}
+.foto img{
+	margin-top: 5%;
+	margin-right: 10%;
+	-webkit-transition: all 0.3s ease-out;
+			height: 150px;
+			width: 200px;
+			overflow: hidden;
+			border: 10px solid #fff;
+			border: 10px solid #eee\9;
+			-webkit-box-shadow:2px 3px 10px #6E6E6E;
+			box-shadow: 2px 3px 10px #6E6E6E;
+			float: right;
+			cursor: pointer;
+	/*border: solid 2px red;
+	width: 45%;
+	height: 45%;*/
+}
 #thumbs a {
   border: solid 1px #ccc;
   width: 100px;
@@ -121,6 +197,30 @@ header{
 	width: 90%;
 
 	
+}
+.slov{
+	float: left;
+	border: solid 1px white;
+	width: 30%;
+	margin-left: 5%;
+}
+.cit{
+	margin-right: 5%;
+	float: right;
+	width: 30%;
+	border: solid 1px white; 
+}
+.cit h3{
+	text-align: center;
+	font-family: Pompudar;
+	color: #D3D3D3;
+	font-size: 40px;
+}
+.slov li{
+	font-size: 20px;
+	color: #D3D3D3;
+	font-family: Pompudar;
+	font-size:  25px;
 }
 table{
 
@@ -230,12 +330,143 @@ table{
 
 
 @media(max-width: 1200px){
+	#toTop{
+	margin-bottom: 20px;
+	width:60px;
+	height: 40px;
+	border-radius: 50% 50% 50% 50%;
+/*border:1px solid #ccc;
+background:#f7f7f7;*/
+background: black;
+text-align:center;
+padding-top: 5px;
+position:fixed;
+bottom:10px; /* отступ кнопки от нижнего края страницы*/
+right:10px;
+cursor:pointer;
+display:none;
+color:white;
+font-size:30px;
+}
+	.container1{
+
+	background-color: black;
+	height: 9%;
+	padding: 0;
+	float: left;
+	
+	width: 100%;
+	
+}
+.information{
+	border-radius: 3%;
+	background: #000000;
+	margin-right: 25%;
+	margin-top: 11%;
+	float: right;
+	width: 50%;
+	
+
+}
+header{
+	width: 100%;
+	 height: 1300px;
+	 padding: 0;
+	 margin: 0 ;
+	 background-image: url('background1.jpg');
+}
+.information h1{
+	margin-left: 5%;
+	color: white;
+	font-size: 35px;
+	margin-bottom: 0;
+}
+.information li{
+	font-family: Roboto;
+	color: #009D91;
+	font-size: 35px;
+}
+.logo{
+	font-family: Pompudar;
+	float:left; 
+	text-transform: uppercase;
+	color: white;
+	margin-top: 2%;
+	margin-left: 3%;
+}
+
+.menu a{
+	padding: 5px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 20px;
+	color:white;
+	
+}
 	.conteiner{
 		max-width: 970px;
 		margin-bottom: 3%;
 		float: left;
 		width: 100%;
 	}
+	.slov{
+	float: left;
+	border: solid 2px white;
+	width: 40%;
+	margin-left: 5%;
+}
+.foto{
+	
+	margin-top: 5%;
+	/*display: table-cell;*/
+	
+	float: right;
+	width: 60%;
+	height: 70%;
+	margin-right: 20%;
+	/*margin-top: 5%;
+
+	margin-top: 50px;
+	margin-right: 50px;
+	width: 40%;
+	height: 70%;
+	float: right;*/
+}
+.foto img{
+	margin-top: 5%;
+	margin-right: 10%;
+	-webkit-transition: all 0.3s ease-out;
+			height: 250px;
+			width: 300px;
+			overflow: hidden;
+			border: 10px solid #fff;
+			border: 10px solid #eee\9;
+			-webkit-box-shadow:2px 3px 10px #6E6E6E;
+			box-shadow: 2px 3px 10px #6E6E6E;
+			float: right;
+			cursor: pointer;
+	/*border: solid 2px red;
+	width: 45%;
+	height: 45%;*/
+}
+.cit{
+	margin-right: 5%;
+	float: right;
+	width: 40%;
+	border: solid 2px white; 
+}
+.cit h3{
+	text-align: center;
+	font-family: Pompudar;
+	color: #D3D3D3;
+	font-size: 40px;
+}
+.slov li{
+	font-size: 30px;
+	color: #D3D3D3;
+	font-family: Pompudar;
+	
+}
 	h2{
 	font-family: Roboto;
 	text-align: center;
@@ -277,7 +508,7 @@ table{
 .nastroy2{
 	
 	float: left;
-	margin-left: 20%;
+	margin-left: 2%;
 	height: 400px;
 	width: 30%;
 }
@@ -293,17 +524,18 @@ table{
 	color: #E6E6FA;
 	margin-bottom: 5%;
 	text-align: center;
-	font-size: 25px;
+	font-size: 35px;
 
 }
 .info{
-	margin-left: 5%;
+	margin-left: 10%;
 	
 	float: left;
 	width: 40%;
 	
 }
 .fotoo{
+	margin-top: 5%;
 	width: 50%;
 	float: left;
 }
@@ -314,8 +546,11 @@ table{
 	font-size: 35px;
 
 }
+.left1{
+	margin-left: 13%;
+}
 .container li{
-	font-size: 22px;
+	font-size: 25px;
 	color: #D3D3D3;
 	font-family: Pompudar;
 }
@@ -354,9 +589,27 @@ table{
 	
 
 }
-@media(max-width: 992px){
-	
+@media(max-width: 958px){
+	#toTop{
+	margin-bottom: 20px;
+	width:80px;
+	height: 60px;
+	border-radius: 50% 50% 50% 50%;
+/*border:1px solid #ccc;
+background:#f7f7f7;*/
+background: black;
+text-align:center;
+padding-top: 15px;
+position:fixed;
+bottom:10px; /* отступ кнопки от нижнего края страницы*/
+right:10px;
+cursor:pointer;
+display:none;
+color:white;
+font-size:60px;
+}
 	.conteiner{
+		border: solid 2px red;
 		margin-left: 100px;
 		max-width: 750px;
 		margin-bottom: 3%;
@@ -364,15 +617,105 @@ table{
 	float: left;
 	width: 100%;
 	}
-	.tabl{
-	margin-left: 16.5%;
+	.information{
+	border-radius: 3%;
+	background: #000000;
+	margin-right: 20%;
+	margin-top: 11%;
+	float: right;
+	width: 60%;
+	
+
+}
+header{
 	width: 100%;
+	 height: 1500px;
+	 padding: 0;
+	 margin: 0 ;
+	 background-image: url('background1.jpg');
+}
+.information h1{
+	margin-left: 5%;
+	color: white;
+	font-size: 45px;
+	margin-bottom: 0;
+}
+.information li{
+	font-family: Roboto;
+	color: #009D91;
+	font-size: 55px;
+}
+	.foto{
+	
+	margin-top: 5%;
+	/*display: table-cell;*/
+	
+	float: right;
+	margin-right: 10%;
+	width: 80%;
+	height: 80%;
+	/*margin-top: 5%;
+
+	margin-top: 50px;
+	margin-right: 50px;
+	width: 40%;
+	height: 70%;
+	float: right;*/
+}
+
+.foto img{
+	margin-top: 5%;
+	margin-right: 10%;
+	-webkit-transition: all 0.3s ease-out;
+			height: 300px;
+			width: 400px;
+			overflow: hidden;
+			border: 10px solid #fff;
+			border: 10px solid #eee\9;
+			-webkit-box-shadow:2px 3px 10px #6E6E6E;
+			box-shadow: 2px 3px 10px #6E6E6E;
+			float: right;
+			cursor: pointer;
+	/*border: solid 2px red;
+	width: 45%;
+	height: 45%;*/
+}
+	.tabl{
+	margin-left: 15%;
+	width: 70%;
 	float: left;
 	
 
 
 	
 	}
+	.slov{
+	float: left;
+	border: solid 5px white;
+	width: 40%;
+	margin-left: 5%;
+	height: 300px;
+
+}
+.cit{
+	margin-right: 5%;
+	float: right;
+	width: 40%;
+	border: solid 5px white; 
+	height: 300px;
+}
+.cit h3{
+	text-align: center;
+	font-family: Pompudar;
+	color: #D3D3D3;
+	font-size: 50px;
+}
+.slov li{
+	
+	color: #D3D3D3;
+	font-family: Pompudar;
+	font-size:  35px;
+}
 	.left1{
 	
 	float: left;
@@ -494,6 +837,24 @@ h2{
 	display: block;
 	padding: 1%;
 }
+#toTop{
+	margin-bottom: 20px;
+	width:120px;
+	height: 90px;
+	border-radius: 50% 50% 50% 50%;
+/*border:1px solid #ccc;
+background:#f7f7f7;*/
+background: black;
+text-align:center;
+padding-top: 20px;
+position:fixed;
+bottom:10px; /* отступ кнопки от нижнего края страницы*/
+right:10px;
+cursor:pointer;
+display:none;
+color:white;
+font-size:60px;
+}
 
 
 
@@ -524,11 +885,19 @@ h2{
 	.tabl {
 	
 	
-	margin-left: 15%;
+	margin-left: 10%;
 	float: left;
+	width: 85%;
 
 	
 	}
+	header{
+	width: 100%;
+	 height: 2000px;
+	 padding: 0;
+	 margin: 0 ;
+	 background-image: url('background1.jpg');
+}
 .hpi{
 	width: 80%;
 	float: right;
@@ -541,7 +910,7 @@ table{
 	border: solid 2px;
 	border-color: #BF3030;
 	color: #D3D3D3;
-	font-size: 40px;
+	font-size: 46.7px;
 	font-family: Roboto;
 }
 	h2{
@@ -550,6 +919,24 @@ table{
 	text-transform: uppercase;
 	color: white;
 	font-size: 45px;
+}
+#toTop{
+	margin-bottom: 20px;
+	width:150px;
+	height: 120px;
+	border-radius: 50% 50% 50% 50%;
+/*border:1px solid #ccc;
+background:#f7f7f7;*/
+background: black;
+text-align:center;
+padding-top: 40px;
+position:fixed;
+bottom:10px; /* отступ кнопки от нижнего края страницы*/
+right:10px;
+cursor:pointer;
+display:none;
+color:white;
+font-size:60px;
 }
 	.film1 img{
 	border: solid 4px black;
@@ -572,24 +959,7 @@ table{
 
 }
 
-#toTop{
-	margin-bottom: 20px;
-	width:60px;
-	height: 45px;
-	border-radius: 50% 50% 50% 50%;
-/*border:1px solid #ccc;
-background:#f7f7f7;*/
-background: black;
-text-align:center;
-padding-top: 10px;
-position:fixed;
-bottom:10px; /* отступ кнопки от нижнего края страницы*/
-right:10px;
-cursor:pointer;
-display:none;
-color:white;
-font-size:30px;
-}
+
 header a:hover{
 	color: #696969;
 	}
@@ -621,7 +991,7 @@ nav{
 	float: right;
 	margin-left: 10px;
 }
-.information{
+/*.information{
 	border-radius: 3%;
 	background: #000000;
 	margin-right: 10%;
@@ -640,7 +1010,7 @@ nav{
 	font-family: Roboto;
 	color: #009D91;
 	font-size: 25px;
-}
+}*/
 .foto img:hover{
 			transform: scale(1.2);
 			-webkit-transform:scale(1.5);
@@ -649,39 +1019,7 @@ nav{
 			box-shadow: 0 10px 15px rgba(0,0,0,0.5);
 			/*z-index: 50;*/
 		}
-.foto{
-	border: solid 1px red;
-	margin-top: 5%;
-	/*display: table-cell;*/
-	
-	float: right;
-	width: 40%;
-	height: 60%;
-	/*margin-top: 5%;
 
-	margin-top: 50px;
-	margin-right: 50px;
-	width: 40%;
-	height: 70%;
-	float: right;*/
-}
-.foto img{
-	margin-top: 5%;
-	margin-right: 10%;
-	-webkit-transition: all 0.3s ease-out;
-			height: 150px;
-			width: 200px;
-			overflow: hidden;
-			border: 10px solid #fff;
-			border: 10px solid #eee\9;
-			-webkit-box-shadow:2px 3px 10px #6E6E6E;
-			box-shadow: 2px 3px 10px #6E6E6E;
-			float: right;
-			cursor: pointer;
-	/*border: solid 2px red;
-	width: 45%;
-	height: 45%;*/
-}
 
 .container a{
 	text-decoration: none;
@@ -763,30 +1101,7 @@ hr{
   padding: 0;
 }
 
-.slov{
-	float: left;
-	border: solid 1px white;
-	width: 30%;
-	margin-left: 5%;
-}
-.cit{
-	margin-right: 5%;
-	float: right;
-	width: 30%;
-	border: solid 1px white; 
-}
-.cit h3{
-	text-align: center;
-	font-family: Pompudar;
-	color: #D3D3D3;
-	font-size: 40px;
-}
-.slov li{
-	font-size: 20px;
-	color: #D3D3D3;
-	font-family: Pompudar;
-	font-size:  25px;
-}
+
 .hr1{
 	margin: 3% 10% 3% 10%;
 	width: 80%;
