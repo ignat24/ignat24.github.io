@@ -5,12 +5,12 @@ body{
 	
 	font-family: Roboto, sans-serif;
 
-	max-width: 1550px;
+	
 	margin: 0 auto;
 	padding: 5px;
 	
 	padding: 0;
-	min-width: 1500px;
+	
 	background-color: #696969;
 	background: linear-gradient( to left,black,#696969,black);
 	
@@ -49,7 +49,7 @@ body{
 
 
 
-@media(max-width: 4000px){
+@media(max-width: 1700px){
 	.container1{
 
 	background-color: black;
@@ -608,9 +608,17 @@ display:none;
 color:white;
 font-size:60px;
 }
+#largeImg {
+  border: solid 2px #ccc;
+  width: 700px;
+  height: 524px;
+  padding: 3px;
+  float: left;
+
+}
 	.conteiner{
 		border: solid 2px red;
-		margin-left: 100px;
+		
 		max-width: 750px;
 		margin-bottom: 3%;
 
@@ -681,8 +689,8 @@ header{
 	height: 45%;*/
 }
 	.tabl{
-	margin-left: 15%;
-	width: 70%;
+	/*margin-left: 15%;*/
+	/*width: 70%;*/
 	float: left;
 	
 
@@ -747,11 +755,11 @@ header{
 }
 #largeImg {
   border: solid 2px #ccc;
-  width: 800px;
-  height: 624px;
+  width: 600px;
+  height: 424px;
   padding: 3px;
   float: left;
-  margin-left: 15%;
+  
 }
 	.info{
 	margin-left: 20%;
@@ -763,7 +771,7 @@ header{
 .fotoo{
 	width: 70%;
 	float: left;
-	margin-left: 15%;
+	/*margin-left: 15%;*/
 }
 
 .container h3{
@@ -807,7 +815,7 @@ table{
 	border: solid 2px;
 	border-color: #BF3030;
 	color: #D3D3D3;
-	font-size: 40px;
+	font-size: 10px;
 	font-family: Roboto;
 }
 h2{
@@ -878,10 +886,35 @@ font-size:60px;
 
 	.conteiner{
 		max-width: none;
-		margin-bottom: 3%;
+		
 		float: left;
 		width: 100%;
 	}
+	.container1{
+		float: left;
+		width: 80%;
+	}
+	#largeImg {
+  border: solid 2px #ccc;
+  width: 100%;
+  /*height: 324px;*/
+  padding: 3px;
+  float: left;
+  
+}
+	.info{
+	margin-left: 10%;
+	
+	float: left;
+	width: 80%;
+	
+}
+.fotoo{
+	width: 80%;
+	float: left;
+	margin-left: 10%;
+}
+
 	.tabl {
 	
 	
@@ -893,15 +926,15 @@ font-size:60px;
 	}
 	header{
 	width: 100%;
-	 height: 2000px;
+	 height: 2300px;
 	 padding: 0;
 	 margin: 0 ;
 	 background-image: url('background1.jpg');
 }
 .hpi{
-	width: 80%;
+	width: 85%;
 	float: right;
-	margin-right: 10%;
+	margin-right: 5%;
 	
 }
 table{
@@ -910,7 +943,7 @@ table{
 	border: solid 2px;
 	border-color: #BF3030;
 	color: #D3D3D3;
-	font-size: 46.7px;
+	font-size: 20px;
 	font-family: Roboto;
 }
 	h2{
@@ -922,21 +955,21 @@ table{
 }
 #toTop{
 	margin-bottom: 20px;
-	width:150px;
-	height: 120px;
+	width:50px;
+	height: 30px;
 	border-radius: 50% 50% 50% 50%;
 /*border:1px solid #ccc;
 background:#f7f7f7;*/
 background: black;
 text-align:center;
-padding-top: 40px;
+padding-top: 5px;
 position:fixed;
 bottom:10px; /* отступ кнопки от нижнего края страницы*/
 right:10px;
 cursor:pointer;
 display:none;
 color:white;
-font-size:60px;
+font-size:20px;
 }
 	.film1 img{
 	border: solid 4px black;
@@ -955,6 +988,14 @@ font-size:60px;
 .podfilm .film1{
 	margin-left: 13%;
 }
+.film1{
+	margin-top: 15px;
+	margin-left: 13%;
+	border: solid 1px black;
+	float: left;
+	display: block;
+	padding: 1%;
+}
 
 
 }
@@ -968,7 +1009,8 @@ nav{
 	margin-left: 7%;
 	margin-top: 10px;
 	
-	float: left;
+	float: right;
+	margin-right: 2%;
 }
 .number{
 	margin-right: 1%;
@@ -1033,7 +1075,7 @@ nav{
 
 hr{
 	width: 80%;
-	margin: 10% 10% 3% 10%;
+	margin: 10% 0 3% 10%;
 	background: white;
 	height: 5px;
 	border: 0;
@@ -1044,6 +1086,7 @@ hr{
 
 
 .container{
+	border: solid 4px white;
 	 margin-bottom: 5%;
 	 float: left;
 	 width: 100%;
