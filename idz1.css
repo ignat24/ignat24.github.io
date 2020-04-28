@@ -2,11 +2,14 @@ html{
 	scroll-behavior: smooth;
 	display: flex;
 	flex-direction: column;
+	background: black;
 
 }
 body{
 	font-family: Pompudar,sans-serif;
 	margin: 0 auto;
+	min-width: 768px;
+	max-width: 1500px;
 	padding: 0;
 	display: flex;
 	flex-direction: column;
@@ -25,6 +28,24 @@ hr{
 	border-radius: 15% 15% 15% 15%;
 	background-image: -webkit-linear-gradient(left, white, black, white);
 	box-shadow: inset 0 12px 12px -12px rgba(0,0,0,1);
+}
+#toTop{
+	margin-bottom: 20px;
+	width:80px;
+	height: 60px;
+	border-radius: 50% 50% 50% 50%;
+/*border:1px solid #ccc;
+background:#f7f7f7;*/
+background: black;
+text-align:center;
+padding-top: 15px;
+position:fixed;
+bottom:10px; /* отступ кнопки от нижнего края страницы*/
+right:10px;
+cursor:pointer;
+display:none;
+color:white;
+font-size:40px;
 }
 
 .galery{
@@ -69,9 +90,143 @@ hr{
 	/*float: left;*/
 }
 
+.menu_p{
+text-decoration: none;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* скрываем чекбокс */
+/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 15px;
+  left: 20px;
+  width: 36px;
+  height: 46px;
+  cursor: pointer;
+  z-index: 1;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 200px;
+  height: 35%;
+  margin: 0;
+  /*padding: 80px 0;*/
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+
+#change{
+	float: right;
+	margin-right: 10px;
+	margin-top: -65px;
+
+}
+/* элементы меню */
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+body.dark{
+background: linear-gradient( to left,#696969,grey,#696969);
+	
+}
+body.dark li
+{
+	color: black;
+}
+body.dark h3
+{
+	color: black;
+
+}
+body.dark p
+{
+	color: black;
+
+}
+body.dark table
+{
+	color: black;
 
 
+}
+body.dark .information
+{
+	background:  white;
 
+}
+body.dark .information h1
+{
+	color: black;
+
+}
+
+body.dark a
+{
+	color: black;
+
+}
+body.dark h2
+{
+	color: black;
+
+}
 
 
 
@@ -87,10 +242,11 @@ hr{
 
 
 @media (max-width: 4097px){
+
 	.container{
 		
-		max-width: 1400px;
-		min-width: 1400px;
+		
+		width: 1400px;
 		margin: 0 auto;
 		border: solid 1px white;
 		
@@ -99,27 +255,27 @@ hr{
 	}
 
 	header{
-		width: 100%;
-		height: 100vh;
+		
+		
 		padding: 0;
 	 	margin: 0 ;
-	 	background-image: url('background1.jpg');
+	 	/*background-image: url('background1.jpg');*/
 	}
 
 	.container1{
 		width: 100%;
-		min-width: 1500px;
+		
 		float: left;
 		background-color: black;
 	}
 
 	.logo{
 	font-family: Pompudar;
-	float:left; 
+	text-align: center;
 	text-transform: uppercase;
 	color: white;
-	margin-top: 1.2%;
-	margin-left: 3%;
+	margin-top: 0.5%;
+	
     }
 
     nav{
@@ -127,6 +283,7 @@ hr{
 	margin-top: 8px;
 	float: right;
 	margin-right: 2%;
+
 	}
 	.menu a:hover{
 		color: #D3D3D3;
@@ -331,6 +488,7 @@ hr{
 	float: left;
 	border: solid 1px white;
 	width: 30%;
+	height: 200px;
 	margin-left: 5%;
 	}
 
@@ -338,6 +496,7 @@ hr{
 	margin-right: 5%;
 	float: right;
 	width: 30%;
+	height: 200px;
 	border: solid 1px white; 
 	}
 
@@ -384,26 +543,25 @@ hr{
 
 	header{
 		width: 100%;
-		height: 100vh;
 		padding: 0;
 	 	margin: 0 ;
-	 	background-image: url('background1.jpg');
+	 	
 	}
 
 	.container1{
 		width: 100%;
-		min-width: 1500px;
+		
 		float: left;
 		background-color: black;
 	}
 
 	.logo{
 	font-family: Pompudar;
-	float:left; 
+	
 	text-transform: uppercase;
 	color: white;
 	margin-top: 1.2%;
-	margin-left: 3%;
+	text-align: center;
     }
 
     nav{
@@ -667,11 +825,10 @@ hr{
 	}
 
 	header{
-		width: 100%;
-		height: 100vh;
+		
 		padding: 0;
 	 	margin: 0 ;
-	 	background-image: url('background1.jpg');
+	 	
 	}
 
 	.container1{
@@ -683,7 +840,7 @@ hr{
 
 	.logo{
 	font-family: Pompudar;
-	float:left; 
+	text-align: center;
 	text-transform: uppercase;
 	color: white;
 	margin-top: 1.2%;
@@ -970,11 +1127,10 @@ hr{
 	}
 
 	header{
-		width: 100%;
-		height: 100vh;
+		
 		padding: 0;
 	 	margin: 0 ;
-	 	background-image: url('background1.jpg');
+	 	
 	}
 
 	.container1{
@@ -986,11 +1142,11 @@ hr{
 
 	.logo{
 	font-family: Pompudar;
-	float:left; 
+	text-align: center;
 	text-transform: uppercase;
 	color: white;
 	margin-top: 1.2%;
-	margin-left: 3%;
+	
     }
 
     nav{
@@ -1272,8 +1428,8 @@ hr{
 @media (max-width: 768px){
 	.container{
 		
-		max-width: none;
-		min-width: none;
+		max-width: 100%;
+		min-width: 100%;
 		margin: 0 auto;
 		border: solid 1px white;
 		
@@ -1282,15 +1438,14 @@ hr{
 	}
 
 	header{
-		width: 100%;
-		height: 100vh;
+		
 		padding: 0;
 	 	margin: 0 ;
-	 	background-image: url('background1.jpg');
+	 	
 	}
 
 	.container1{
-		width: 100%;
+		
 		min-width: 768px;
 		float: left;
 		background-color: black;
@@ -1298,11 +1453,12 @@ hr{
 
 	.logo{
 	font-family: Pompudar;
-	float:left; 
+	text-align: center;
 	text-transform: uppercase;
 	color: white;
-	margin-top: 1.2%;
-	margin-left: 3%;
+	font-size: 40px;
+	
+	
     }
 
     nav{
@@ -1349,20 +1505,22 @@ hr{
 	.information h1{
 	margin-left: 5%;
 	color: white;
+	font-size:  40px;
 	margin-bottom: 0;
 	}
 
 	.information li{
 	font-family: Roboto;
 	color: #009D91;
-	font-size: 35px;
+	font-size: 45px;
 	}
 
 	.foto{
 	display: flex;
 	margin: 0 auto;
 	
-	width: 90%;
+	width: 75%;
+
 	
 	}
 
@@ -1382,8 +1540,8 @@ hr{
 
 	.film1 img{
 	border: solid 4px black;
-	width: 400px;
-	height: 400px;
+	width: 500px;
+	height: 500px;
 	margin-top: 0;
 	}
 
@@ -1392,15 +1550,15 @@ hr{
 	margin: 0;
 	margin-bottom: 5%;
 	text-align: center;
-	font-size: 30px;     }
+	font-size: 40px;     }
 
 	#films{
 		margin-top: 2%;
-		margin-left: 21%;
+		margin-left: 30%;
 	}
 	
 	.film1{
-	margin-left: 21%;
+	margin-left: 8%;
 	margin-top: 2%;
 	border: solid 1px black;
 	float: left;
@@ -1414,7 +1572,7 @@ hr{
 	}
 
 	.podfilm .film1{
-	margin-left: 21%;
+	margin-left: 8%;
 
 	}
 
@@ -1423,22 +1581,22 @@ hr{
 	border: solid 2px;
 	border-color: #BF3030;
 	color: #D3D3D3;
-	font-size: 30px;
+	font-size: 50px;
 	font-family: Pompudar;
 	}
 
 	.tabl{
-	margin-left: 1%;
+	margin-left: 5%;
 	float: left;
 	
 	}
 
 	.hpi img{
-	height:  425px;
+	height:  625px;
 	}
 
 	.hpi{
-	margin-left: 5.8%;
+	margin-left: 15%;
 	float: left;
 	}
 
@@ -1462,7 +1620,7 @@ hr{
 	color: #E6E6FA;
 	margin-bottom: 5%;
 	text-align: center;
-	font-size: 25px;
+	font-size: 35px;
 	}
 
 	.info{
@@ -1473,27 +1631,27 @@ hr{
 
 	.info li{
 		color:  #E6E6FA;
-		font-size: 25px;
+		font-size: 45px;
 		font-family: Pompudar;
 	}
 
 	h3{
 		text-align: center;
 		color: white;
-		font-size: 25px;
+		font-size: 45px;
 	}
 
 	.fotoo{
 	width: 70%;
 	margin-top: 2%;
-	margin-left: 15%;
+	margin-left: 25%;
 	float: left;
 	}
 
 	#largeImg {
   	border: solid 2px #ccc;
-  	width: 500px;
-  	height: 424px;
+  	width: 700px;
+  	height: 524px;
   	padding: 3px;
   	float: left;
 	}
@@ -1514,13 +1672,13 @@ hr{
 	.left1{
 	float: left;
 	width: 90%;
-	margin-left: 7.5%;
+	margin-left: 15%;
 	}
 
 	.slov{
 	float: left;
 	border: solid 1px red;
-	height: 250px;
+	height: 300px;
 	width: 40%;
 	margin-left: 5%;
 	}
@@ -1528,7 +1686,7 @@ hr{
 	.cit{
 	margin-right: 5%;
 	float: right;
-	height: 250px;
+	height: 300px;
 	width: 40%;
 	border: solid 1px red; 
 	}
@@ -1537,20 +1695,20 @@ hr{
 	text-align: center;
 	font-family: Pompudar;
 	color: #D3D3D3;
-	font-size: 40px;
+	font-size: 50px;
 	}
 
 	.slov li{
 	
 	color: #D3D3D3;
 	font-family: Pompudar;
-	font-size:  30px;
+	font-size:  50px;
 	}
 
 	footer{
 		margin: 0;
 		padding: 0;
-		font-size: 25px;
+		font-size: 45px;
 	}
 
 
