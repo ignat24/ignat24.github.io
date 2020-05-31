@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Happy 19!</title>
+	<meta charset="utf-8">
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+message = "Happy 19!";
+ns6_switch = 1;
+var ns6 = document.getElementById&&!document.all;
+var mess = new Array( -1, -5, -9, -13, -9, -5, -1);
+var num = 0;
+var scope = 0;
+var text = "";
+
+function start_jumping() {
+if (ns6&&!ns6_switch) {
+ jumping_text.innerHTML = message;
+ return;
+}
+for (n=0; n != message.length; n++) {
+ text += "<span style='position: relative;' id='id_" + n + "'>" +
+ message.charAt(n) + "</span>"
+}
+jumping_text.innerHTML = text;
+text = "";
+move_left();
+}
+
+function move_left() {
+first_symbol = document.getElementById("id_0");
+first_symbol.style.left = -scope + "px";
+if (scope != 12) {
+ scope += 4;
+ setTimeout("move_left();", 50);
+}
+else move_right();
+}
+
+function move_right() {
+first_symbol.style.left = -scope + "px";
+if (scope != 0) {
+ scope -= 4;
+ setTimeout("move_right();", 50);
+}
+else wave();
+}
+
+function wave() {
+text = "";
+for (n=0; n != message.length; n++) {
+ if (n+num > -1 && n+num < 7) {
+  text += "<span style='position: relative; top: " + mess[n+num] + "px'>" +
+  message.charAt(n) + "</span>"
+ }
+ else text += "<span>" + message.charAt(n) + "</span>";
+}
+jumping_text.innerHTML = text;
+text = "";
+if (num != (-message.length)) {
+ num--;
+ setTimeout("wave();", 50);
+}
+else {
+ num = 0;
+ setTimeout("start_jumping();", 50);
+}
+}
+</script>
+	<style type="text/css">
+		.contant{
+			margin: 0 auto;
+			width: 80%;
+			border: 10px solid #D4D4D4; /* Ширина и цвет границ*/
+border-radius: 10px; /* Радиус границ*/
+box-shadow: 0 0 15px #A9A9A9;
+
+		}
+		.cacarousel .slide{
+			border: none;
+		}
+		
+		body{
+			background-color: #130873;
+	background: linear-gradient( to left,#7C71D8,#130873,#7C71D8);
+		}
+		.pag1 h1,h2{
+			text-align: center;
+			color: white;
+			font-size: 80px;
+		}
+
+.container img{
+ width: 400px;
+ 
+ 
+ /*border: solid 10px white;*/
+ 
+ 
+}
+.container h1{
+
+color: white;
+font-size: 40px;
+	}
+	.cont img{
+		width: 100%;
+	}
+
+	</style>
+
+
+
+</head>
+<body>
+	<div class="container">
+	<div class="pag1">
+		<div id="jumping" style="font-weight: bold; font-size: 80px; text-align: center; color: white;"></div>
+		
+		<div class="contant">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="8.jpg" alt="Первый слайд">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="6.jpg" alt="Второй слайд">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="4.jpg" alt="Третий слайд">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="7.jpg" alt="Третий слайд">
+    </div>
+   
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+	</div>
+		
+	</div>
+
+
+<hr>
+<div class="container">
+<div class="cont">
+	<img src="June.jpg">
+</div>
+</div>
+<hr>
+<div class="container">
+	<h1 style="font-size: 50px;" align="center">Гранатовая или гиацинтовая свадьба</h1>
+	<div class="cont" style="border: solid 1px white; width: 40%;margin: 0 auto; background-color: rgb(139, 0, 0,0.5); border: 2px solid #D4D4D4; /* Ширина и цвет границ*/
+border-radius: 10px; /* Радиус границ*/
+box-shadow: 0 0 15px #A9A9A9;">
+	<p style="text-align: center; color: red; font-size: 30px;"><b>Девятнадцать</b> — это дата<br>
+Цвета сочного граната.<br>
+Пусть горят ваши сердца,<br>
+Вместе бьются до конца.<br><br>
+
+Чтобы жили, без сомненья,<br>
+В счастье, радости, терпении<br>
+Аж до свадьбы золотой<br>
+С чистой в сердце добротой.<br>
+
+</p>
+</div>
+</div>
+<hr>
+<div class="container">
+	<h1 align="center" style="font-size: 50px;">Поздравление от Дани:</h1>
+	<div class="vid" style="margin: 0 auto; width: 560px;">
+	<iframe style=" border: solid 3px white;" width="560" height="315" src="https://www.youtube.com/embed/NyfIxy-80LA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+<hr>
+<div class="txt">
+	<h1 style="text-align: center;
+	font-size: 80px; color: rgb(139, 0, 0);">Поздравляю!</h1>
+</div>
+	
+
+	
+<script type="text/javascript">
+jumping_text = document.getElementById("jumping");
+start_jumping();
+</script>
+</body>
+</html>
