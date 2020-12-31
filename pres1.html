@@ -3,6 +3,8 @@
 <head>
 	<title>New Year!</title>
 	<link rel="shortcut icon" type="/image/png" href="https://img.icons8.com/ios/50/000000/christmas-tree.png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width" >
 	<style type="text/css">
 		#tree {
 	width: 220px;
@@ -97,11 +99,11 @@
 	display: block;
 	
 }
-#txt1 h1{
+/*#container h1{
 	text-align: center;
 	font-weight: bold;
 	font-size: 50px;
-	}
+	}*/
 body{
 	font-family: Pompudar,sans-serif;
 	background-image: url('newYear.jpg');
@@ -109,24 +111,77 @@ body{
 	width: 100%;
 
 }
-html{
-	margin: 0;
-	padding: 0;
+
+html {
+  font-size: 1rem;
 }
-#vid{
-	display: block;
-	margin-top: 20px;
+#container{
+	margin: 10px 0px 10px 10px;
 
 }
 iframe{
+	border: solid 5px red;
+	border-radius: 10px/20px;
 	display: block;
 	margin-left: 30%;
 	}
 footer h1{
 	text-align: center;
 	font-weight: bold;
+	margin: 0;
 	font-size: 40px;
 	
+}
+footer{
+	background: linear-gradient( to left,white,#FA8072,white);
+}
+blockquote h1{
+	text-align: center;
+	font-size: 60px;
+	font-family: 1rem;
+}
+@media (max-width: 1200px){
+	#container{
+	margin: 10px 0px 10px 10px;
+
+}
+iframe{
+	width: 40%; 
+	height:315px;
+	border: solid 5px red;
+	border-radius: 10px/20px;
+	display: block;
+	margin-left: 30%;
+	}
+footer h1{
+	text-align: center;
+	font-weight: bold;
+	margin: 0;
+	font-size: 40px;
+	
+}
+}
+@media (max-width: 576px) { 
+ 
+  #container{
+	margin: 10px 0px 10px 10px;
+
+}
+iframe{
+	width: 70%; 
+	height:215px;
+	border: solid 5px red;
+	border-radius: 10px/20px;
+	display: block;
+	margin-left: 15%;
+	}
+footer h1{
+	text-align: center;
+	font-weight: bold;
+	margin: 0;
+	font-size: 80px;
+	
+}
 }
 
 
@@ -139,11 +194,13 @@ footer h1{
 
 </head>
 <body>
-<div id="txt1">
-	<h1>Ho-ho-ho!</h1>
+<div class="container">
+<blockquote id="blockquote text-center">
+	<h1 >Ho-ho-ho!</h1>
 	<h1>Happy New Year!</h1>
+</blockquote>
 </div>
-<div id="elka">
+<div id="container">
 	<svg id="tree" xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0" y="0" viewBox="-1694.2 483.2 199.3 285.2" xml:space="preserve">
     <g id="tree">
         <rect x="-1605.6" y="697.1" class="st0" width="21.7" height="71.3"/>
@@ -180,13 +237,16 @@ footer h1{
     <polygon class="st4" points="-1572 499.9 -1589.6 499.9 -1595 483.2 -1595 516.7 -1580.8 527 -1586.2 510.3 "/>
 	</svg>
 </div>
-<div id="vid">
+<div id="container">
 	<iframe width="40%" height="315" src="https://www.youtube.com/embed/owjDP4JleDM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-<footer>
+<footer >
+	<div class="container">
 	<h1>Have a good year!<br>Your Danil!</h1>
-
+</div>
 </footer>
 
 </body>
 </html>
+
+
